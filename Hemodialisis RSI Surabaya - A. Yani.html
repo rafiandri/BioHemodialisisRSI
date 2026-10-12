@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hemodialisis RSI Surabaya - A. Yani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#f6fffb;--bg2:#f1f9ff;color-scheme:light;--ink:#0a2a22;--mute:#4a6b62;
+  --card:rgba(255,255,255,.85);--line:rgba(14,122,79,.2);
+  --a:#0e7a4f;--b:#0ea5e9;--c:#22c55e;--shadow:0 10px 30px rgba(14,122,79,.16);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{-webkit-tap-highlight-color:transparent;min-height:100vh;font-family:"Roboto",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);
+  background:linear-gradient(160deg,var(--bg1),var(--bg2));background-color:var(--bg1);overflow-x:hidden;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6'%3E%3Cg stroke='%230e7a4f' stroke-opacity='.12' transform='translate(12 12) scale(1.1)'%3E%3Cpath d='M20.8 4.6a5.500 5.500 0 0 0-7.800 0L12 5.700l-1-1.100a5.500 5.500 0 0 0-7.800 7.800l1 1.100L12 21.200l7.800-7.700 1-1.100a5.500 5.500 0 0 0 0-7.800z'/%3E%3C/g%3E%3Cg stroke='%230ea5e9' stroke-opacity='.14' transform='translate(58 58)'%3E%3Cpath d='M12 2s7 7.500 7 12.500a7 7 0 0 1-14 0C5 9.500 12 2 12 2z'/%3E%3C/g%3E%3Cg stroke='%230e7a4f' stroke-opacity='.09' transform='translate(58 8) scale(.8)'%3E%3Cpath d='M2 12h4l2-4 3 8 2-4h9'/%3E%3C/g%3E%3C/svg%3E");background-size:96px}
+.float{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.float i{position:absolute;bottom:-50px;left:var(--l);width:var(--s);height:var(--s);background-size:contain;background-repeat:no-repeat;opacity:0;animation:rise 15s linear infinite;animation-delay:var(--d)}
+.float .h{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e7a4f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.8 4.6a5.500 5.500 0 0 0-7.800 0L12 5.700l-1-1.100a5.500 5.500 0 0 0-7.800 7.800l1 1.100L12 21.200l7.800-7.700 1-1.100a5.500 5.500 0 0 0 0-7.800z'/%3E%3C/svg%3E")}.float .pl{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.500 20.500 3.500 13.500a4.950 4.950 0 0 1 7-7l7 7a4.950 4.950 0 0 1-7 7zM8.500 8.500l7 7'/%3E%3C/svg%3E")}.float .st{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e7a4f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 3v6a4 4 0 0 0 8 0V3M5 3H4M13 3h1M9 13v2a5 5 0 0 0 10 0v-1.500M19 11.500a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/svg%3E")}.float .sy{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 2l4 4M17 7l3-3M19 9 8.700 19.300a1 1 0 0 1-1.400 0L4.700 16.700a1 1 0 0 1 0-1.400L15 5M9 11l4 4M5 19l-3 3M14 4l6 6'/%3E%3C/svg%3E")}.float .sh{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e7a4f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4'/%3E%3C/svg%3E")}.float .th{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 14.760V3.500a2.500 2.500 0 0 0-5 0v11.260a4.500 4.500 0 1 0 5 0z'/%3E%3C/svg%3E")}
+@keyframes rise{10%{opacity:.5}85%{opacity:.4}100%{transform:translateY(-110vh) rotate(45deg);opacity:0}}
+.badge{position:absolute;right:-4px;bottom:2px;width:36px;height:36px;border-radius:50%;background:#fff;border:2px solid var(--a);display:grid;place-items:center;z-index:2;box-shadow:var(--shadow);animation:beat 1.8s ease-in-out infinite}
+.badge svg{width:20px;height:20px}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.15)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.35;z-index:0;animation:float 14s ease-in-out infinite}
+.b1{width:320px;height:320px;background:var(--b);top:-80px;left:-90px}
+.b2{width:300px;height:300px;background:var(--c);bottom:-90px;right:-80px;animation-delay:-5s}
+.waves{position:fixed;left:0;bottom:0;width:100%;height:90px;z-index:0;pointer-events:none;overflow:hidden}.waves svg{position:absolute;bottom:0;left:0;width:200%;height:100%;animation:wv 12s linear infinite}.waves svg+svg{animation-duration:18s;animation-direction:reverse;opacity:.5}@keyframes wv{to{transform:translateX(-50%)}}
+.b3{width:200px;height:200px;background:var(--a);top:45%;right:-70px;animation-delay:-9s;opacity:.35}
+@keyframes float{50%{transform:translate(30px,-40px) scale(1.12)}}
+.wrap{position:relative;z-index:1;max-width:460px;margin:0 auto;padding:36px 20px 28px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.reveal{opacity:0;transform:translateY(22px);animation:up .7s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*90ms)}
+@keyframes up{to{opacity:1;transform:none}}
+.avatar{position:relative;width:132px;height:132px;display:grid;place-items:center}
+.avatar::before,.avatar::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--a);animation:ring 2.8s ease-out infinite}
+.avatar::after{animation-delay:1.4s}
+@keyframes ring{from{transform:scale(1);opacity:.7}to{transform:scale(1.7);opacity:0}}
+.logo{width:100%;height:100%;border-radius:50%;background:conic-gradient(from 0deg,var(--a),var(--b),var(--c),var(--a));padding:4px;animation:spin 8s linear infinite}
+.logo span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;animation:spin 8s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.logo img{width:84%;height:84%;object-fit:contain;border-radius:50%;animation:drip 3s ease-in-out infinite}
+.logo span{background:#fff}
+.logo svg{width:50px;height:50px;animation:drip 2.4s ease-in-out infinite}
+@keyframes drip{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.08)}}
+h1{font-family:"Montserrat","Roboto",system-ui,Arial,sans-serif;margin-top:20px;font-size:1.55rem;line-height:1.2;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(90deg,var(--a),var(--b),var(--c),var(--a));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:250% 0}}
+.sub{margin-top:6px;font-size:.95rem;color:var(--mute);font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}.chips span{font-size:.74rem;font-weight:700;padding:5px 12px;border-radius:99px;color:var(--a);background:var(--card);border:1px solid var(--line)}.chips b{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;padding:5px 12px;border-radius:99px;font-size:.74rem}
+details.btn{display:block;cursor:pointer}details.btn summary{display:flex;align-items:center;gap:14px;list-style:none}details.btn summary::-webkit-details-marker{display:none}details[open] .arr{transform:rotate(90deg)}.sch{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;font-weight:500;line-height:1.7;animation:up .4s both}.sch em{font-style:normal;font-weight:800;color:var(--a)}
+.ecg{width:240px;height:34px;margin-top:12px}
+.ecg path{fill:none;stroke:var(--a);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:300;stroke-dashoffset:300;animation:draw 2.6s ease-in-out infinite}
+@keyframes draw{60%{stroke-dashoffset:0}100%{stroke-dashoffset:-300}}
+.links{width:100%;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.btn{position:relative;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;text-decoration:none;color:var(--ink);
+  background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;font-weight:700;text-align:left}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(14,165,233,.28),transparent);transform:skewX(-20deg);transition:left .6s}
+@media (hover:hover){.btn:hover{transform:translateY(-4px) scale(1.015);border-color:var(--b);box-shadow:0 16px 34px rgba(14,165,233,.35)}.btn:hover::after{left:130%}.btn:hover .arr{color:var(--b)}.btn:hover .ic{box-shadow:0 6px 14px rgba(14,165,233,.45)}.primary:hover .arr{color:#fff}}
+.btn:focus-visible{border-color:var(--a);outline:3px solid rgba(14,122,79,.35);outline-offset:2px}
+.btn:active{transform:scale(.965);box-shadow:0 4px 12px rgba(14,122,79,.25);transition-duration:.1s}
+.btn:active .ic{transform:scale(.9)}
+.rip{position:absolute;border-radius:50%;background:rgba(14,165,233,.35);transform:scale(0);pointer-events:none;animation:rip .6s ease-out forwards}
+.primary .rip{background:rgba(255,255,255,.5)}
+@keyframes rip{to{transform:scale(1);opacity:0}}
+.ic{flex:none;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));transition:transform .35s}
+@media (hover:hover){.btn:hover .ic{transform:rotate(-8deg) scale(1.1)}}
+.ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.t{flex:1;font-size:.98rem;font-family:"Montserrat","Roboto",system-ui,Arial,sans-serif;font-weight:700}.t small{font-family:"Roboto",system-ui,Arial,sans-serif}.t small{display:block;font-weight:500;font-size:.76rem;color:var(--mute);margin-top:2px}
+.arr{flex:none;color:var(--a);font-size:1.2rem;transition:transform .25s}
+@media (hover:hover){.btn:hover .arr{transform:translateX(5px)}}
+.primary{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;border-color:transparent;animation:glow 2.4s ease-in-out infinite}
+.primary .t small,.primary .arr{color:rgba(255,255,255,.85)}
+.primary .ic{background:rgba(255,255,255,.22)}
+@keyframes glow{50%{box-shadow:0 0 0 7px rgba(14,122,79,.18),var(--shadow)}}
+.social{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--a);background:var(--card);border:1px solid var(--line);transition:transform .3s,background .3s,color .3s}
+@media (hover:hover){.social a:hover{transform:translateY(-5px) rotate(8deg);background:var(--bg,var(--a));color:#fff;border-color:transparent;box-shadow:var(--sh,0 8px 18px rgba(14,122,79,.35))}}
+.social a:focus-visible{outline:3px solid rgba(14,122,79,.35);outline-offset:2px}
+.social a:active{transform:scale(.88);background:var(--bg,var(--a));color:#fff;border-color:transparent;transition-duration:.1s}
+.social svg{width:20px;height:20px;fill:currentColor}
+footer{margin-top:28px;font-size:.78rem;color:var(--mute)}
+footer a{color:var(--a);text-decoration:none;font-weight:700}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.primary::after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent)}
+.social a[aria-label="Facebook"]{--bg:#1877f2;--sh:0 8px 18px rgba(24,119,242,.45)}
+.social a[aria-label="Instagram"]{--bg:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);--sh:0 8px 18px rgba(220,39,67,.45)}
+.social a[aria-label^="X"]{--bg:#000;--sh:0 8px 18px rgba(0,0,0,.4)}
+.social a[aria-label="YouTube"]{--bg:#f00;--sh:0 8px 18px rgba(255,0,0,.4)}
+.social a[aria-label="TikTok"]{--bg:#000;--sh:-2px -2px 0 #25f4ee,2px 2px 0 #fe2c55,0 8px 18px rgba(0,0,0,.35)}
+.social a:focus-visible{background:var(--bg,var(--a));color:#fff}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="float" aria-hidden="true"><i class="h" style="--l:8%;--s:24px;--d:-0s"></i><i class="pl" style="--l:22%;--s:22px;--d:-4s"></i><i class="st" style="--l:38%;--s:26px;--d:-8s"></i><i class="sy" style="--l:55%;--s:24px;--d:-2s"></i><i class="sh" style="--l:70%;--s:24px;--d:-11s"></i><i class="th" style="--l:84%;--s:22px;--d:-6s"></i><i class="h" style="--l:92%;--s:18px;--d:-13s"></i></div>
+<div class="waves" aria-hidden="true"><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path fill="var(--b)" fill-opacity=".25" d="M0 45C100 15 200 75 300 45S500 15 600 45s200 30 300 0 200-30 300 0V90H0z"/></svg><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path fill="var(--c)" fill-opacity=".3" d="M0 55C100 25 200 85 300 55S500 25 600 55s200 30 300 0 200-30 300 0V90H0z"/></svg></div>
+<main class="wrap">
+  <div class="avatar reveal" style="--i:0">
+    <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0e7a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.500 5.500 0 0 0-7.800 0L12 5.700l-1-1.100a5.500 5.500 0 0 0-7.800 7.800l1 1.100L12 21.200l7.800-7.700 1-1.100a5.500 5.500 0 0 0 0-7.800z"/><path d="M6 12h3l1.500-3 3 6 1.500-3h3" stroke-width="1.700"/></svg></span><div class="logo"><span><img alt="Logo Hemodialisis RSI Surabaya - A. Yani" src="data:image/jpeg;base64,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"></span></div>
+  </div>
+  <h1 class="reveal" style="--i:1">Hemodialisis<br>RSI Surabaya A. Yani</h1>
+  <p class="sub reveal" style="--i:2">Layanan cuci darah aman, nyaman, & terpercaya Unit Hemodialisis</p>
+  <svg class="ecg reveal" style="--i:3" viewBox="0 0 240 34"><path d="M0 17h70l7-12 9 26 8-22 6 8h140"/></svg>
+
+  <nav class="links">
+    <a class="btn primary reveal" style="--i:4" href="tel:+62318284505">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.300 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></span>
+      <span class="t">Hubungi Unit Hemodialisis<small>(031) 8284505</small></span><span class="arr">→</span></a>
+    <details class="btn reveal" style="--i:5">
+      <summary><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="t">Jadwal Layanan<small>Sesi Pagi &amp; Siang</small></span><span class="arr">→</span></summary>
+      <div class="sch"><em>Pagi</em> · Senin–Kamis 06.30–14.00 · Jumat–Sabtu 06.30–13.00<br><em>Siang</em> · Senin–Kamis 12.00–19.30 · Jumat–Sabtu 12.00–18.00</div>
+    </details>
+    <a class="btn reveal" style="--i:6" href="https://maps.app.goo.gl/jVyJw3X5f8Ta53zB9" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <span class="t">Lokasi Unit Hemodialisis<small>Lt. 1 Gedung Graha, Jl. A. Yani No. 2-4</small></span><span class="arr">→</span></a>
+    <a class="btn reveal" style="--i:7" href="https://wa.me/+6282332441626?text=Halo%20CS%20RSI%20Ayani%20Saya%20ingin%20bertanya%20soal%20Hemodialisis" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M12.040 2a9.900 9.900 0 0 0-8.480 15.020L2 22l5.100-1.340A9.900 9.900 0 1 0 12.040 2zm0 1.800a8.100 8.100 0 1 1-4.130 15.060l-.3-.18-3.030.8.81-2.950-.2-.31A8.100 8.100 0 0 1 12.040 3.800zM8.700 7.300c-.2 0-.5.070-.76.350-.26.280-1 .97-1 2.370s1.030 2.750 1.170 2.940c.14.190 2 3.180 4.930 4.330 2.440.96 2.930.77 3.460.72.530-.05 1.700-.7 1.940-1.370.24-.67.24-1.250.17-1.370-.07-.12-.26-.19-.55-.33-.29-.14-1.700-.84-1.960-.93-.26-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.120-.17.19-.33.22-.62.07-.29-.14-1.220-.45-2.320-1.430-.86-.77-1.440-1.710-1.610-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.560-.89-2.140-.23-.56-.47-.48-.65-.49z"/></svg></span>
+      <span class="t">Customer Care<small>Tanya via WhatsApp</small></span><span class="arr">→</span></a>
+    <a class="btn reveal" style="--i:8" href="https://rsisurabaya.com/" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+      <span class="t">Kunjungi Website<small>rsisurabaya.com</small></span><span class="arr">→</span></a>
+  </nav>
+
+  <div class="social reveal" style="--i:9">
+    <a href="https://www.facebook.com/rsisayani/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.500c0-.8.3-1.200 1.300-1.200H17V2h-2.700C11.500 2 10 3.600 10 6v2H7.500v3.500H10V22h4v-10.500h2.800L17.300 8z"/></svg></a>
+    <a href="https://www.instagram.com/hemodialisisrsisurabaya/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zM17.500 5.500a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+    <a href="https://x.com/rsiayani" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M17.800 3h3L14.300 10.400 22 21h-6l-4.700-6.200L5.900 21h-3l7-8L2.500 3h6.200l4.200 5.700zM16.800 19.200h1.700L7.600 4.700H5.800z"/></svg></a>
+    <a href="https://www.youtube.com/channel/UCCCnlhmM0xKjnNsadSsL7pg/featured" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 8.200a3 3 0 0 0-2.100-2.100C18 5.600 12 5.600 12 5.600s-6 0-7.900.5A3 3 0 0 0 2 8.200C1.500 10 1.500 12 1.500 12s0 2 .5 3.800a3 3 0 0 0 2.100 2.100c1.900.5 7.900.5 7.900.5s6 0 7.900-.5a3 3 0 0 0 2.100-2.100c.5-1.800.5-3.800.5-3.800s0-2-.5-3.800zM10 15V9l5.200 3z"/></svg></a>
+    <a href="https://www.tiktok.com/@rsiayani" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.500 2h-3.200v13.200a2.800 2.800 0 1 1-2.800-2.800c.3 0 .6 0 .9.100V9.200a6 6 0 1 0 5.100 5.900V8.800a7 7 0 0 0 4 1.300V6.900a4 4 0 0 1-4-4.900z"/></svg></a>
+  </div>
+
+  <footer class="reveal" style="--i:10">Supported by <a href="http://markbro.com/siap-bantu-anda/" target="_blank" rel="noopener">MarkBro</a></footer>
+</main>
+<script>
+document.querySelectorAll('.btn').forEach(function(b){b.addEventListener('pointerdown',function(e){var r=b.getBoundingClientRect(),d=Math.max(r.width,r.height)*2,x=document.createElement('span');x.className='rip';x.style.cssText='width:'+d+'px;height:'+d+'px;left:'+(e.clientX-r.left-d/2)+'px;top:'+(e.clientY-r.top-d/2)+'px';b.appendChild(x);setTimeout(function(){x.remove()},650)})});
+
+
+</script>
+</body>
+</html>
